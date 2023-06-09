@@ -101,7 +101,7 @@ class Database:
                         break
 
                 if f:
-                    if n != '#' and n != '' and kab != '' and a != '':
+                    if n != '#' and n != '' and a != '':
                         try:
                             chzha = int(kab)                                    
                             ras += str(int(n))+ '. '+str(a) + ' ('+str(kab)[:len(str(kab))-2]+')' + '\n'
