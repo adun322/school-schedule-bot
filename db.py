@@ -1,7 +1,7 @@
 import sqlite3
 import xlrd
 
-DayOfWeek = {0: 'Ыхыхыхы', 1: 'Пн', 2: 'Вт', 3: 'Ср', 4: 'Чт', 5: 'Пт'}
+DayOfWeek = {0: '!&', 1: 'Пн', 2: 'Вт', 3: 'Ср', 4: 'Чт', 5: 'Пт'}
 
 
 class Database:
