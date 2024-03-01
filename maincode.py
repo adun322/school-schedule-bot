@@ -184,20 +184,12 @@ async def bot_message(message):
                     await bot.send_message(message.from_user.id, text='БИ ДЕ!')
                 else:
                     if 'ПРИВЕТ' in a or 'ДАРОВА' in a or 'ХАЙ' in a:
-                        await bot.send_message(message.from_user.id, text='Хааай. Чё как?')
+                        await bot.send_message(message.from_user.id, text='Привет.')
                     elif 'НОРМ' in a or 'ХОРОШО' in a:
                         await bot.send_message(message.from_user.id, text='Ясно!')
                     elif 'КАК ДЕЛА' in a or 'А ТЫ?' in a or 'А У ТЕБЯ' in a:
                         await bot.send_message(message.from_user.id, text='Нормально в целом')
                     elif 'ТЕБЯ' in a and 'ЗОВУТ' in a:
-                        await bot.send_message(message.from_user.id, text='Меня зовут Сюзамен. Приятно познакомиться')
-                    elif 'ИДИ НАХУЙ' in a or 'ПОШЁЛ НАХУЙ' in a:
-                        await bot.send_message(message.from_user.id, text='Ахахаха, сам иди, тухлич')
-                    elif 'ХУЙ' in a or 'БЛЯ' in a or 'ПИЗД' in a or 'ДОЛБОЁ' in a or 'ПОРН' in a or 'ГЕЙ' in a or 'МУДАК' in a or 'МУДЕНЬ' in a:
-                        await bot.send_message(message.from_user.id, text='Как некультурно :(')
-                    elif 'ПОН' in a:
-                        await bot.send_message(message.from_user.id, text='Есть моментик!')
-                    elif 'АХА' in a or 'ХАХ' in a or 'ХИХ' in a or 'ИХИ' in a:
                         await bot.send_message(message.from_user.id, text=':)')
                     elif 'СПАСИБО' in a or 'СПС' in a:
                         a = random.randint(1,2)
@@ -215,8 +207,6 @@ async def bot_message(message):
                         await bot.send_message(message.from_user.id, text='Я есть на аватарке')
                     elif 'ДА' in a or 'НЕТ' in a:
                         await bot.send_message(message.from_user.id, text='Пон')
-                    elif 'ЛОХ' in a:
-                        await bot.send_message(message.from_user.id, text='Сам')
                     elif db.get_signup(message.from_user.id) == 'setclass':
                         await bot.send_message(message.from_user.id, text='Класс указан некорректно!')
 
